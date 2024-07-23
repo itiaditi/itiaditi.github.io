@@ -7,7 +7,7 @@ import Github from "../About/Github";
 import reliance from "../../Assets/Projects/reliance.jpeg";
 import toppers from "../../Assets/Projects/toppers.jpeg";
 import sb from "../../Assets/Projects/snapbasket.jpeg";
-
+import saviour from "../../Assets/Projects/saviour.jpeg"
 function Projects(props) {
   return (
     <Container fluid className="project-section" ref={props.link}>
@@ -55,6 +55,19 @@ function Projects(props) {
               github="https://github.com/itiaditi/toppers-academy.git"
               link="https://toppers-academy-henna.vercel.app/"
               tech="ReactJs, Typescript, JSON server"
+            />
+          </Col>
+        </Row>
+        <Row style={{ justifyContent: "center" }}>
+          <Col md={12} className="project-card">
+            <ProjectCard
+              imgPath={saviour}
+              isBlog={false}
+              title="Saviour"
+              description="Saviour is a pioneering platform in blockchain technology, fostering innovation and investment opportunities."
+              link="https://saviour-pi.vercel.app/"
+              github="https://github.com/itiaditi/Saviour.git"
+              tech="NextJs, TailwindCSS"
             />
           </Col>
         </Row>
